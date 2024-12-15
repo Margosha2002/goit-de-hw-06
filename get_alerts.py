@@ -1,6 +1,6 @@
 import csv
 
-with open("alerts_conditions.csv", "r") as file:
+with open("data/alerts_conditions.csv", "r") as file:
     reader = csv.DictReader(file)
     alerts_data = [row for row in reader]
 

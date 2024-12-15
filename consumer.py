@@ -26,10 +26,6 @@ async def consume_event(topic_name, callback):
 
         try:
             for message in consumer:
-                # print(
-                #     f"Received message: {message.value} with key: {message.key}, partition {message.partition}"
-                # )
-                print(message.key)
                 callback(message.value)
         except Exception as e:
             print(f"An error occurred: {e}")

@@ -7,7 +7,9 @@ import random
 
 
 def handle_alert(data):
-    print(data)
+    print(
+        f"{data['timestamp']} --- {data['message']} --- {data['code']} --- TEMP: {data['t_avg']} --- HUM: {data['h_avg']}"
+    )
 
 
 async def main():
